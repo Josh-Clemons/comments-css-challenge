@@ -7,6 +7,10 @@
 body {
     background-color: hsl(228, 33%, 97%);
     font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 img {
@@ -25,19 +29,19 @@ img {
     background-color: white;
     display: flex;
     flex-direction: row;
-    width: 700px;
-    border: 2px solid hsl(223, 19%, 93%);
+    width: 680px;
+    border: 2px solid hsl(228, 33%, 97%);
     border-radius: 10px;
 }
 
 .replyDiv {
-    margin: 10px;
+    margin: 20px 10px 0px 25px;
     padding: 15px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    width: 640px;
-    border: 2px solid hsl(223, 19%, 93%);
+    width: 620px;
+    border: 2px solid hsl(228, 33%, 97%);
     border-radius: 10px;
 }
 
@@ -45,13 +49,17 @@ img {
     background-color: hsl(228, 33%, 97%);
     border-left: 2px solid hsl(223, 19%, 93%);
     margin-left: 38px;
-    padding-left: 20px;
+    padding: 0px 0x -10px 20px;
+}
+
+.postBody {
+    padding: 0px 20px 0px 0px;
 }
 
 .likeCounter {
     display: flex;
     flex-direction: column;
-    width: 25px;
+    width: 30px;
     height: 80px;
     background-color: hsl(228, 33%, 97%);
     border: 2px solid hsl(223, 19%, 93%);
@@ -71,20 +79,20 @@ img {
     background-image: url('../images/icon-plus.svg');
     background-position: center;
     background-color: hsl(228, 33%, 97%);
-    width: 15px;
+    width: 25px;
     height: 20px;
     background-repeat: no-repeat;
-    margin: 0px 0px 0px 3px;
+    margin: 0px 0px 0px 1px;
     padding: 3px 0px;
 }
 .likeDown {
     background-image: url('../images/icon-minus.svg');
     background-color: hsl(228, 33%, 97%);
     background-position: center;
-    width: 20px;
+    width: 25px;
     height: 20px;
     background-repeat: no-repeat;
-    margin: 0px 0px 0px 1px;
+    margin: 0px 0px 0px 2px;
     padding: 3px 0px;
 }
 
@@ -103,12 +111,50 @@ img {
     background-image: url('../images/icon-reply.svg');
     background-position: left;
     background-repeat: no-repeat;
-    width: 60px;
+    width: 63px;
     height: 20px;
     justify-self: right;
     text-align: right;
     color: hsl(238, 40%, 52%);
     font-weight: 500;
+}
+
+.deleteInTitleRow {
+    /* display: flex; */
+    background-image: url('../images/icon-delete.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    width:68px;
+    height: 20px;
+    justify-self: right;
+    text-align: right;
+    color: hsl(358, 79%, 66%);
+    font-weight: 500;
+}
+
+.editInTitleRow {
+    /* display: flex; */
+    background-image: url('../images/icon-edit.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    width:50px;
+    height: 20px;
+    margin: 0px 0px 0px 20px;
+    justify-self: right;
+    text-align: right;
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.you {
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    border-radius: 3px;
+    height: 15px;
+    width: 50px;
+    text-align: center;
+    padding: 0px 0px 7px 0px;
+    margin: 0px 8px 0px 0px;
 }
 
 .postMessageText {
@@ -118,11 +164,62 @@ img {
     font-size: 16px;
 }
 
-.ageInTitleRow{
+.postDiv .ageInTitleRow{
     color: hsl(211, 10%, 45%);
     padding: 5px;
+    width: 410px;
+}
+
+.replyDiv .ageInTitleRow{
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+    width: 335px;
+}
+
+.replyDiv .ageInTitleRow.me{
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+    width: 225px;
 }
 
 .nameInTitleRow {
     padding: 5px 10px;
 }
+
+.addCommentDiv {
+    margin: 15px 10px 10px 10px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 680px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 10px;
+}
+
+.addCommentDiv .addCommentInput {
+    width: 500px;
+    height: 100px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 7px;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    color: hsl(211, 10%, 45%);
+}
+
+.addCommentDiv .sendButton {
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    border-radius: 7px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin: 5px 0px 5px 10px;
+}
+
+.addCommentDiv img {
+    margin: 5px;
+}
+
