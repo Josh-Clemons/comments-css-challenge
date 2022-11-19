@@ -1,0 +1,128 @@
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; }
+    
+.attribution:active { color: hsl(228, 45%, 44%); } */
+
+body {
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.atText {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.postDiv {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    border: 2px solid hsl(223, 19%, 93%);
+    border-radius: 10px;
+}
+
+.replyDiv {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 640px;
+    border: 2px solid hsl(223, 19%, 93%);
+    border-radius: 10px;
+}
+
+.replyDivHolder {
+    background-color: hsl(228, 33%, 97%);
+    border-left: 2px solid hsl(223, 19%, 93%);
+    margin-left: 38px;
+    padding-left: 20px;
+}
+
+.likeCounter {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    height: 80px;
+    background-color: hsl(228, 33%, 97%);
+    border: 2px solid hsl(223, 19%, 93%);
+    border-radius: 5px;
+}
+
+.likeTotal {
+    color: hsl(238, 40%, 52%);
+    text-align: center;
+    font-weight: 500;
+    border-top: 1px solid hsl(223, 19%, 93%);
+    border-bottom: 1px solid hsl(223, 19%, 93%);
+    padding: 3px 0px;
+}
+
+.likeUp {
+    background-image: url('../images/icon-plus.svg');
+    background-position: center;
+    background-color: hsl(228, 33%, 97%);
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 3px;
+    padding: 3px 0px;
+}
+.likeDown {
+    background-image: url('../images/icon-minus.svg');
+    background-color: hsl(228, 33%, 97%);
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 1px;
+    padding: 3px 0px;
+}
+
+.postTitleRowDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.replyInTitleRow {
+    /* display: flex; */
+    background-image: url('../images/icon-reply.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 20px;
+    justify-self: right;
+    text-align: right;
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+.postMessageText {
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.ageInTitleRow{
+    color: hsl(211, 10%, 45%);
+    padding: 5px;
+}
+
+.nameInTitleRow {
+    padding: 5px 10px;
+}
